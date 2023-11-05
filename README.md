@@ -1,4 +1,4 @@
-## Decision Tree
+## 🍬🥧🍰 Decision Tree 🍰🥧🍬
 
 Classifying the data we have with the Decision Tree technique uses the iris dataset, one of the most popular datasets that is often used for learning machine learning.
 
