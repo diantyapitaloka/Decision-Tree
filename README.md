@@ -87,3 +87,6 @@ export_graphviz(
 )
 ```
 
+## 🍬🥧🍰 License 🍰🥧🍬
+- Copyright by Diantya Pitaloka
+
