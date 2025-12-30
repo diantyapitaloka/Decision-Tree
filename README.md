@@ -2,6 +2,7 @@
 - Input Features: Your flower has a sepal length of 6.2cm, sepal width of 3.4cm, petal length of 5.4cm, and petal width of 2.3cm. These specific measurements act as the variables that the model evaluates at each node.
 - Classifying the data we have with the Decision Tree technique uses the iris dataset, one of the most popular datasets that is often used for learning machine learning. Want to predict the species of an iris flower that has a sepal length of 6.2 centimeters, a sepal width of 3.4 centimeters, a petal length of 5.4 centimeters, and a petal width of 2.3 centimeters.
 - Petal Dimension Significance: In the iris dataset, petal length and width are usually the most informative features for splitting the data. Measurements like your 5.4cm petal length and 2.3cm petal width strongly suggest a specific category.
+- The Root Node: The classification process begins at the top of the tree, which is called the root node. The algorithm likely first asks if the petal length is greater than a certain threshold, such as 2.45cm.
 
 ![image](https://github.com/diantyapitaloka/Sklearn-Decisiontree/assets/147487436/fee66213-a688-4ff5-b651-047afca66c22)
 
