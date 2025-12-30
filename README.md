@@ -6,6 +6,7 @@
 - Classification Path: Since your petal length (5.4cm) is high, the decision path moves away from the Setosa species. It then evaluates the petal width to distinguish between the remaining two species.
 - Species Prediction: Given that the petal width is 2.3cm and the length is 5.4cm, the tree will classify this flower as Iris Virginica. This species typically exhibits the largest petal dimensions among the three types.
 - Decision Logic: The tree reaches this conclusion because Iris Versicolor usually has smaller petals than your specimen. Your flower's dimensions fall well within the established boundaries for a Virginica classification.
+- Model Visualization: You can visualize this entire logic as a flowchart where each box represents a question about a measurement. The final "leaves" at the bottom of the chart provide the predicted species name.
 
 ![image](https://github.com/diantyapitaloka/Sklearn-Decisiontree/assets/147487436/fee66213-a688-4ff5-b651-047afca66c22)
 
