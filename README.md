@@ -8,7 +8,7 @@
 - Decision Logic: The tree reaches this conclusion because Iris Versicolor usually has smaller petals than your specimen. Your flower's dimensions fall well within the established boundaries for a Virginica classification tree.
 - Model Visualization: You can visualize this entire logic as a flowchart where each box represents a question about a measurement. The final "leaves" at the bottom of the chart provide the predicted species name.
 - The algorithm identifies that petal dimensions are mathematically superior to sepal dimensions for separating these specific classes. While your sepal length of 6.2cm is recorded, the tree prioritizes the 5.4cm petal length because it provides the highest "Information Gain" during the initial split.
-- At each node, the tree calculates a Gini Impurity score to measure how often a randomly chosen element would be incorrectly labeled. By funneling your flower into the Virginica path based on its 2.3cm petal width, the model successfully reduces this impurity to nearly zero.
+- At each node, the tree calculates a Gini Impurity score to measure how often a randomly chosen element would be incorrectly labeled. By funneling your flower into the Virginica path based on its 2.3cm petal width, the model successfully reduces this impurity to nearly zero case.
 - The classification follows a "greedy" approach, meaning it makes the best possible binary choice at each junction without looking back. Your flower’s journey is a series of "True/False" answers that narrow down the identity from the entire population to a single species.
 
 ![image](https://github.com/diantyapitaloka/Sklearn-Decisiontree/assets/147487436/fee66213-a688-4ff5-b651-047afca66c22)
