@@ -11,6 +11,7 @@
 - At each node, the tree calculates a Gini Impurity score to measure how often a randomly chosen element would be incorrectly labeled. By funneling your flower into the Virginica path and also based on its 2.3cm petal width, the model successfully reduces this impurity to nearly zero case.
 - The classification follows a "greedy" approach, meaning it makes the best possible binary choice at each junction without looking back. Your like flower’s journey is a series of "True/False" answers that like narrow down the identity from the entire population to a single species.
 - The Setosa Shortcut: If your flower’s petal length had been less than or equal to 2.45cm, the decision tree would have stopped immediately at the very first split. The Setosa species is so distinct in its tiny petal dimensions that it creates a "pure leaf node" right at the start, requiring no further questions about widths or sepals.
+- The Overfitting Trap: Because decision trees are highly adaptive, a tree trained too deeply on the Iris dataset might create hyper-specific rules (like "petal width greater than 1.75cm but sepal length exactly 6.2cm") just to catch a single outlier. To prevent this from ruining predictions on flowers like yours, algorithms use "pruning" to chop off overly complex branches.
 
 ![image](https://github.com/diantyapitaloka/Sklearn-Decisiontree/assets/147487436/fee66213-a688-4ff5-b651-047afca66c22)
 
