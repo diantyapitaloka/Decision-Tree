@@ -20,8 +20,7 @@ Non-Linear Boundaries: Decision Trees classify data by creating clear, step-wise
 - Zero Assumptions: They do not require your measurement features to follow a bell curve or any other specific statistical distribution, meaning the model works reliably regardless of how your raw data is shaped.
 - Scale Independence: You never need to normalize or standardize your measurement units because the algorithm evaluates splits purely on relative ordering rather than the actual magnitude or units of the numbers.
 - Overfitting Controls: You can prevent the tree from memorizing useless background noise by placing strict limits on its maximum branch depth or setting minimum requirements for how many samples a leaf must hold.
-
-Step-by-Step Logic: The algorithm builds its decision rules through a greedy selection strategy that evaluates every possible split and chooses whichever immediate question separates the species categories best at that exact moment.
+- Step-by-Step Logic: The algorithm builds its decision rules through a greedy selection strategy that evaluates every possible split and chooses whichever immediate question separates the species categories best at that exact moment.
 
 Probability Estimates: Rather than simply assigning a fixed category label at the end, leaf nodes calculate exact percentage confidence scores based on the proportion of matching training samples that ended up in that specific group.
 
