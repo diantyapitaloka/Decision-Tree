@@ -23,8 +23,7 @@ Non-Linear Boundaries: Decision Trees classify data by creating clear, step-wise
 - Step-by-Step Logic: The algorithm builds its decision rules through a greedy selection strategy that evaluates every possible split and chooses whichever immediate question separates the species categories best at that exact moment.
 - Probability Estimates: Rather than simply assigning a fixed category label at the end, leaf nodes calculate exact percentage confidence scores based on the proportion of matching training samples that ended up in that specific group.
 - Missing Data Handling: Trees can still navigate through decisions and produce reliable predictions even when certain feature values are missing by using alternative secondary splits that mirror the primary rule closely.
-
-Multi-Class Ready: They naturally separate more than two target species at the same time without relying on complex binary workarounds like combining multiple one-versus-rest classifiers.
+- Multi-Class Ready: They naturally separate more than two target species at the same time without relying on complex binary workarounds like combining multiple one-versus-rest classifiers.
 
 Sensitivity to Data: A small addition or removal of just a few training instances can completely change the top question of the tree and reconfigure the layout of all downstream rules.
 
