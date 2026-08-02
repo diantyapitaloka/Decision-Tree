@@ -16,6 +16,23 @@
 - The Setosa Shortcut: If your flower’s petal length had been less than or equal to 2.45cm, the decision tree would have stopped immediately at the very first split. The Setosa species is so distinct in its tiny petal dimensions that it creates a "pure leaf node" right at the start, requiring no further questions about widths or sepals.
 - The Overfitting Trap: Because decision trees are highly adaptive, a tree trained too deeply on the Iris dataset might create hyper-specific rules (like "petal width greater than 1.75cm but sepal length exactly 6.2cm") just to catch a single outlier. To prevent this from ruining predictions on flowers like yours, algorithms use "pruning" to chop off overly complex branches.
 - The Axis-Aligned Boundary: Decision trees create boundary lines that are always perpendicular to the feature axes. For your flower, this means the model draws a straight horizontal line on a graph at a specific petal width (e.g., 1.75cm) and a straight vertical line at a petal length, cutting the data into neat rectangular prediction zones rather than diagonal slopes.
+Non-Linear Boundaries: Decision Trees classify data by creating clear, step-wise rectangular regions across feature spaces instead of attempting to draw complex diagonal lines or smooth curved planes between categories.
+
+Zero Assumptions: They do not require your measurement features to follow a bell curve or any other specific statistical distribution, meaning the model works reliably regardless of how your raw data is shaped.
+
+Scale Independence: You never need to normalize or standardize your measurement units because the algorithm evaluates splits purely on relative ordering rather than the actual magnitude or units of the numbers.
+
+Overfitting Controls: You can prevent the tree from memorizing useless background noise by placing strict limits on its maximum branch depth or setting minimum requirements for how many samples a leaf must hold.
+
+Step-by-Step Logic: The algorithm builds its decision rules through a greedy selection strategy that evaluates every possible split and chooses whichever immediate question separates the species categories best at that exact moment.
+
+Probability Estimates: Rather than simply assigning a fixed category label at the end, leaf nodes calculate exact percentage confidence scores based on the proportion of matching training samples that ended up in that specific group.
+
+Missing Data Handling: Trees can still navigate through decisions and produce reliable predictions even when certain feature values are missing by using alternative secondary splits that mirror the primary rule closely.
+
+Multi-Class Ready: They naturally separate more than two target species at the same time without relying on complex binary workarounds like combining multiple one-versus-rest classifiers.
+
+Sensitivity to Data: A small addition or removal of just a few training instances can completely change the top question of the tree and reconfigure the layout of all downstream rules.
 
 ![image](https://github.com/diantyapitaloka/Sklearn-Decisiontree/assets/147487436/fee66213-a688-4ff5-b651-047afca66c22)
 
