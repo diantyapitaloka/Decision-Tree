@@ -17,8 +17,7 @@
 - The Overfitting Trap: Because decision trees are highly adaptive, a tree trained too deeply on the Iris dataset might create hyper-specific rules (like "petal width greater than 1.75cm but sepal length exactly 6.2cm") just to catch a single outlier. To prevent this from ruining predictions on flowers like yours, algorithms use "pruning" to chop off overly complex branches.
 - The Axis-Aligned Boundary: Decision trees create boundary lines that are always perpendicular to the feature axes. For your flower, this means the model draws a straight horizontal line on a graph at a specific petal width (e.g., 1.75cm) and a straight vertical line at a petal length, cutting the data into neat rectangular prediction zones rather than diagonal slopes.
 Non-Linear Boundaries: Decision Trees classify data by creating clear, step-wise rectangular regions across feature spaces instead of attempting to draw complex diagonal lines or smooth curved planes between categories.
-
-Zero Assumptions: They do not require your measurement features to follow a bell curve or any other specific statistical distribution, meaning the model works reliably regardless of how your raw data is shaped.
+- Zero Assumptions: They do not require your measurement features to follow a bell curve or any other specific statistical distribution, meaning the model works reliably regardless of how your raw data is shaped.
 
 Scale Independence: You never need to normalize or standardize your measurement units because the algorithm evaluates splits purely on relative ordering rather than the actual magnitude or units of the numbers.
 
